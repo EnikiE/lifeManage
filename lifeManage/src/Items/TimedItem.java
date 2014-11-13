@@ -4,8 +4,8 @@ import java.sql.Date;
 import java.sql.Time;
 
 public abstract class TimedItem extends Item{
-	private Date duedate;
-	private Time time;
+	protected Date duedate;
+	protected Time time;
 
 	public Time getTime() {
 		return time;

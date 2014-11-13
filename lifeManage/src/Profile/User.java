@@ -21,11 +21,14 @@ public class User {
 		
 	}
 
-	public void printTasks() {
+	public String tasksToString() {
 		// TODO Auto-generated method stub
+		StringBuilder ret = new StringBuilder();
+		
 		for(UntimedTask u : tasks){
-			System.out.println(u);
+			ret.append(u+"\n");
 		}
+		return ret.toString();
 	}
 	
 }
